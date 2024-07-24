@@ -1,115 +1,50 @@
-# Swisstronik Tesnet Techinal Task 1
+### README untuk CryptoWeave
 
-link : [Click!](https://www.swisstronik.com/testnet2/dashboard)
+---
 
-Feel free donate to my EVM address
+# CryptoWeave
 
-EVM :
+CryptoWeave adalah platform yang memungkinkan integrasi dan koneksi berbagai smart contract dan aplikasi blockchain dengan mudah dan aman.
 
-```bash
-0x9902C3A98Df4b240ad5496cC26F89bAb8058f4aE
-```
+## Fitur
 
-## Steps
+- **Integrasi Mudah**: Integrasikan berbagai smart contract dengan beberapa langkah sederhana.
+- **Keamanan Tinggi**: Keamanan adalah prioritas utama kami, memastikan smart contract Anda terlindungi.
+- **Kompatibilitas Luas**: Mendukung berbagai blockchain dan protokol.
 
-### 1. Clone Repository
+## Instalasi
 
-```bash
-git clone https://github.com/Mnuralim/hardhat-deploy-contract.git
-```
+1. Clone repository ini:
+    ```bash
+    git clone https://github.com/username/cryptoweave.git
+    ```
+2. Masuk ke direktori project:
+    ```bash
+    cd cryptoweave
+    ```
+3. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-```
-cd hardhat-deploy-contract
-```
+## Penggunaan
 
-### 2. Install Dependency
+1. Buat file konfigurasi baru:
+    ```bash
+    cp .env.example .env
+    ```
+2. Edit `.env` dengan informasi yang diperlukan.
+3. Jalankan server:
+    ```bash
+    npm start
+    ```
 
-```bash
-npm install
-```
+## Kontribusi
 
-### 3. Set .env File
+Kami menerima kontribusi dari komunitas. Silakan buat pull request atau laporkan masalah di repository ini.
 
-create .env file in root project
+## Lisensi
 
-```bash
-PRIVATE_KEY="your private key"
-```
+Proyek ini dilisensikan di bawah lisensi MIT.
 
-### 4. Create Smart Contract
-
-- Open contract folder
-- Create Hello_swtr.sol file
-- Copy this code and paste there
-
-```
-/// SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.19;
-
-//This contract is only intended for testing purposes
-
-contract Swisstronik {
-    string private message;
-
-    /**
-     * @dev Constructor is used to set the initial message for the contract
-     * @param _message the message to associate with the message variable.
-     */
-    constructor(string memory _message) payable{
-        message = _message;
-    }
-
-    /**
-     * @dev setMessage() updates the stored message in the contract
-     * @param _message the new message to replace the existing one
-     */
-    function setMessage(string memory _message) public {
-        message = _message;
-    }
-
-    /**
-     * @dev getMessage() retrieves the currently stored message in the contract
-     * @return The message associated with the contract
-     */
-    function getMessage() public view returns(string memory){
-        return message;
-    }
-}
-```
-
-### 5. Compile Smart Contract
-
-```bash
-npm run compile
-```
-
-### 6. Deploy Smart Contract
-
-```bash
-npm run deploy
-```
-
-### 7. Get Message
-
-```bash
-npm run get-message
-```
-
-### 8. Get Message
-
-```bash
-npm run set-message
-```
-
-### 9. Finsihed
-
-- Open the deployed-adddress.ts (location in utils folder)
-- Copy the address and paste the address in testnet dashboard
-- push this project to your github and paste your repository link in testnet dashboard
-
-by :
-github : [Mnuralim](https://github.com/Mnuralim)
-twitter : @Izzycracker04
-telegram : @fitriay19
-
-//0xf1f0C7Bf19ee4E196C0213cEE1002e9a5fadff62//
+---
